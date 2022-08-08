@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --color-body: #37b3ae;
+    --color-heading: white;
+    --color-base: #0f525e;
+    --color-base2: #0e4055;
+    --color-brand: #c2d183;
+    --color-brand2: #a1b452;
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+/* color pallete */
+
+
+
+body {
+    background-color: var(--color-base);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--color-brand);
+}
+img {
+    width: 100%;
+}
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(3,63,71,0.8), rgba(3,63,71,0.8)), url(../images/marissa-grootes-vdaJJbls3xE-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* Content */
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+}
+
+
